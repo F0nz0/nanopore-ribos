@@ -1,0 +1,13 @@
+# Set universe to vanilla
+universe = vanilla
+
+# Path of the executable (it can be a system command, your own application, a script, etc...)
+executable = /lustre/bio_running/DNA_Ribo/src/basecalling_features_scripts_with_raw_data/DNAonly_vs_Ribo1_rep2_09072021_basecal_feat_analysis.sh
+
+# The output of the remote machine running the job will be printed
+log=/lustre/bio_running/DNA_Ribo/src/basecalling_features_scripts_with_raw_data/DNAonly_vs_Ribo1_rep2_09072021_basecal_feat_analysis.log
+
+request_cpus = 4
+request_memory = 80 GB
+
+queue

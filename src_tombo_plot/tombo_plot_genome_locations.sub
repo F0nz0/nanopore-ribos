@@ -1,0 +1,16 @@
+# universe describes an execution envirorment. Set universe to vanilla
+universe = vanilla
+
+# Path of the executable (it can be a system command, your own application, a script, etc...)
+executable = /lustre/bio_running/DNA_Ribo_minimap2sensitive/src_tombo_plot/tombo_plot_genome_locations.sh
+
+# The argument to pass to the executable
+arguments = $(SAMPLES) $(FAST5SINGLE_DIR_CTRL) $(FAST5SINGLE_DIR) $(GENOME_LOCATION) $(SITENAME)
+
+# The output of the remote machine running the job will be printed
+log=/lustre/bio_running/DNA_Ribo_minimap2sensitive/src_tombo_plot/tombo_plot_genome_locations.$(SAMPLES).$(GENOME_LOCATION).$(SITENAME).log
+
+request_cpus = 50
+request_memory = 64 GB
+
+queue SAMPLES,FAST5SINGLE_DIR_CTRL,FAST5SINGLE_DIR,GENOME_LOCATION,SITENAME from /lustre/bio_running/DNA_Ribo_minimap2sensitive/src_tombo_plot/tombo_plot_genome_locations_inputs.txt

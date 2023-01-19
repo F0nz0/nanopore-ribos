@@ -1,0 +1,6 @@
+# STEPS
+1. basecalling guppy (fastqs)
+2. multi_to_single_fast5
+3. tombo annotate fast5 with fastqs
+4. tombo resquiggle
+5. plot and export outputs

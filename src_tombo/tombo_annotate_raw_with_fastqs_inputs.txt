@@ -1,0 +1,3 @@
+DNA_ONLY_30062021, /lustre/bio_running/DNA_Ribo_minimap2sensitive/run_dna_30062021/fast5single, /lustre/bio_running/DNA_Ribo_minimap2sensitive/run_dna_30062021/dna_only.fastq
+run_1xRIBO_02072021, /lustre/bio_running/DNA_Ribo_minimap2sensitive/run_1xRIBO_02072021/fast5single, /lustre/bio_running/DNA_Ribo_minimap2sensitive/run_1xRIBO_02072021/run_1xRIBO_02072021.fastq
+run_1xRIBO_09072021, /lustre/bio_running/DNA_Ribo_minimap2sensitive/run_1xRIBO_09072021/fast5single, /lustre/bio_running/DNA_Ribo_minimap2sensitive/run_1xRIBO_09072021/run_1xRIBO_09072021.fastq

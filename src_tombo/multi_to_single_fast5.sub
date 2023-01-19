@@ -1,0 +1,16 @@
+# universe describes an execution envirorment. Set universe to vanilla
+universe = vanilla
+
+# Path of the executable (it can be a system command, your own application, a script, etc...)
+executable = /lustre/bio_running/DNA_Ribo_minimap2sensitive/src_tombo/multi_to_single_fast5.sh
+
+# The argument to pass to the executable
+arguments = $(SAMPLE) $(FAST5DIR) $(SAVEDIR)
+
+# The output of the remote machine running the job will be printed
+log=/lustre/bio_running/DNA_Ribo_minimap2sensitive/src_tombo/$(SAMPLE).log
+
+request_cpus = 10
+request_memory = 16 GB
+
+queue SAMPLE,FAST5DIR,SAVEDIR from /lustre/bio_running/DNA_Ribo_minimap2sensitive/src_tombo/multi_to_single_fast5_inputs.txt

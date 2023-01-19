@@ -1,0 +1,8 @@
+#Region_name	Start	Stop
+reg_of_int	4642	5247
+dna_only	4980	5017
+1xRIBO(Ribo1)	4980	5017
+1xRIBO(Ribo1_ed1_rA)	4985	4985
+1xRIBO(Ribo1_ed2_rG)	4997	4997
+1xRIBO(Ribo1_ed3_rC)	5004	5004
+1xRIBO(Ribo1_ed4_rU)	5015	5015

@@ -1,0 +1,16 @@
+# universe describes an execution envirorment. Set universe to vanilla
+universe = vanilla
+
+# Path of the executable (it can be a system command, your own application, a script, etc...)
+executable = /lustre/bio_running/DNA_Ribo_minimap2sensitive/src_tombo/tombo_annotate_raw_with_fastqs.sh
+
+# The argument to pass to the executable
+arguments = $(SAMPLE) $(FAST5SINGLE_DIR) $(FASTQFILE)
+
+# The output of the remote machine running the job will be printed
+log=/lustre/bio_running/DNA_Ribo_minimap2sensitive/src_tombo/tombo_annotate_raw_with_fastqs.$(SAMPLE).log
+
+request_cpus = 30
+request_memory = 16 GB
+
+queue SAMPLE,FAST5SINGLE_DIR,FASTQFILE from /lustre/bio_running/DNA_Ribo_minimap2sensitive/src_tombo/tombo_annotate_raw_with_fastqs_inputs.txt
